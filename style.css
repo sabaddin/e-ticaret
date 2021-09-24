@@ -1,0 +1,1030 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+@media only screen and (max-width:767px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    #menu__toggle {
+        opacity: 0;
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+      }
+      
+      
+      .menu__btn {
+         z-index: 3;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+      
+        width: 26px;
+        height: 26px;
+
+        cursor: pointer;
+      
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+      
+        width: 100%;
+        height: 2px;
+      
+        background-color: #616161;
+      
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      .menu__box {
+          z-index: 1;
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+      
+        width: 300px;
+        height: 100%;
+      
+        margin: 0;
+        padding: 80px 0;
+      
+        list-style: none;
+      
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      
+        transition-duration: .25s;
+      }
+      
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+      
+        color: #333;
+      
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+      
+        text-decoration: none;
+      
+        transition-duration: .25s;
+      }
+      .menu__item:hover {
+        background-color: #CFD8DC;
+      }
+      
+
+
+
+
+
+
+
+      .humburgersearch1 input{
+          width: 70px;
+      }
+
+      .humburgermenu1{
+          display: flex;
+          margin:20px ;
+    }
+    .humburgermenu1 img{
+          margin-left: 10px;
+    }
+    .search{
+        display: none;
+    }
+    .icon1{
+        display: none;
+    }
+    .bags{
+        display: none;
+    }
+   
+    .humburgerheader i{
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+        display: flex;  
+        
+    }
+     li{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .headphone{
+        display:none;
+    }
+    .Bellashop{
+    
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
+    .header i{
+        width: 240px;
+        margin-left: 20px;
+        display: flex;
+    
+    }
+    .search{text-align: center;
+     width: 30%;
+        position: relative;
+    }
+    .search input{
+        width: 100%;
+        
+    }
+    .search img{
+    position: absolute;
+    margin-top: 2px;
+    right: 10px;
+    
+    
+    }
+    .icon1{
+        
+        width: 40%;
+    }
+    .icon1 img{
+        margin-left: 20px;
+    }
+    .bags{
+        
+        display: none;
+    }
+    .praducts{
+      
+        text-align: center;
+        width: 100%;
+        height: 700px;
+        background-color: #FFE2E0;
+      
+    }
+    .text{
+        margin-top: 30px;
+        width: 30%;
+    }
+    .box img{
+        width: 320px;
+        height: 320px;
+    }
+    .icons{
+        
+        
+        width: 100vw;
+        height: 160px;
+        background-color: whitesmoke;
+    }
+    .fatured p{
+        display: none;
+    }
+    .icons img{
+        margin-left: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    .page2{
+        
+        background-color: whitesmoke;
+        
+        width: 100%;
+        height: 950px;
+    }
+    .page2 div{
+        margin-top: 50px;
+        text-align: center;
+    }
+  
+    .kecid {
+        display: none;
+    }
+    .fatured{
+        margin: 50px 80px 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bag1{
+        margin-top: 25px ;
+        background-color: whitesmoke;
+       
+        height: 450px;
+       
+    }
+    .new{
+        text-align: center;
+        background-color: greenyellow;
+        width: 60px;
+        height: 25px;
+    }
+    .baslik{
+        padding: 20px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img1{
+        
+        text-align: center;
+    }
+    .img1 img{
+        width: 200px;
+        height: 200px;
+    }
+    .ulduz{
+        margin-left: 20px;
+    }
+    .ulduz img{
+        
+        width: 10px;
+        height: 10px;
+    
+    }
+    .text1 div{
+       display: flex;
+    }
+    
+    .text1 button{
+    
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+    }
+    .page3 {
+        width: 100%;
+        height: 1050px;
+        padding: 0 50px;
+    }
+    .page4{
+        margin-top: 300px;
+        padding: 0 50px;
+        background-color: #FFF7F7;
+        width: 100%;
+        height: 1600px;
+    }
+    .bag2{
+        margin-top: 50px;
+        background-color: white;
+       
+        height: 470px;
+       
+    }
+    .img2{
+        margin-top: 70px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img2 img{
+       
+        
+        width: 150px;
+        height: 150px;
+    }
+    .page5{
+       
+        margin-top: 450px;
+        width: 100%;
+        height: 1050px;
+        background-color: whitesmoke;
+    
+    }
+    .Bellashop2{
+      
+       
+        width: 100%;
+        height: 100px;
+    }
+    .lupa1 input{
+        
+        width:  200px;
+    }
+    .search2{
+         position: relative;
+    }
+    
+    .lupa2{
+        position: absolute;
+        bottom: 2px;
+       right: 5px;
+    }
+    
+    .rew{
+        width: 100%;
+        height: 250px;
+    }
+    .tel{
+        padding: 50px;
+    }
+    .sendmsj{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .sendmsj img{
+        width: 20px;
+        height: 20px;
+    }
+    .sendmsj p{
+        margin-top: 15px;
+    }
+    .page6{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+    .c img{
+        width: 150px;
+        height: 10px;
+    
+    
+    }
+    .wtsp img{
+        margin: 15px;
+    width: 15px;
+    height: 15px;
+    }
+    .paragraf{
+        width: 250px;
+        height: 100px;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:768px)  and (max-width:1023px)  {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .Menu{
+        display: none;
+    }
+    ul{
+        display: flex;  
+        
+    }
+     li{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    
+    .headphone{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #007878;
+        width: 100%;
+        height: 40px;
+    }
+    .Bellashop{
+    
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+    }
+    .header i{
+        width: 240px;
+        margin-left: 20px;
+        display: flex;
+    
+    }
+    .search{text-align: center;
+     width: 30%;
+        position: relative;
+    }
+    .search input{
+        width: 100%;
+        
+    }
+    .search img{
+    position: absolute;
+    margin-top: 2px;
+    right: 10px;
+    
+    
+    }
+    .icon1{
+        
+        width: 40%;
+    }
+    .icon1 img{
+        margin-left: 20px;
+    }
+    .bags{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+    .praducts{
+      
+        text-align: center;
+        width: 100%;
+        height: 700px;
+        background-color: #FFE2E0;
+      
+    }
+    .text{
+        margin-top: 30px;
+        width: 30%;
+    }
+    .bagpng img{
+        width: 450px;
+        height: 450px;
+    }
+    .icons{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        background-color: whitesmoke;
+    }
+    .icons img{
+        margin-left: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    .page2{
+        
+        background-color: whitesmoke;
+        width: 100%;
+        height: 900px;
+        
+    }
+    .page2 div{text-align: center;
+       
+        margin-top: 30px;
+        
+    }
+
+    .kecid {
+        border: 1px solid black;
+        border-radius: 50%;
+        top: 100px;
+        right: 0;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        
+    }
+    .kecid img{
+    
+        text-align: center;
+        width: 30px;
+        height: 30px;
+    }
+    .fatured{
+        margin: 50px 80px 0 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bag1{
+        background-color: whitesmoke;
+       
+        height: 480px;
+       
+    }
+    .new{
+        text-align: center;
+        background-color: greenyellow;
+        width: 60px;
+        height: 25px;
+    }
+    .baslik{
+        padding: 20px 20px 0 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img1{
+        text-align: center;
+    }
+    .img1 img{
+        width: 200px;
+        height: 220px;
+    }
+    .ulduz{
+        margin-left: 20px;
+    }
+    .ulduz img{
+        
+        width: 10px;
+        height: 10px;
+    
+    }
+    .text1 div{
+       display: flex;
+    }
+    
+    .text1 button{
+    
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+    }
+    .page3 {
+        
+        padding: 0 90px;
+    }
+    .page4{
+        padding: 0 90px;
+        background-color: #FFF7F7;
+        width: 100%;
+        height: 1700px;
+    }
+    .bag2{
+        margin-top: 50px;
+        background-color: white;
+       
+        height: 480px;
+       
+    }
+    .img2{
+        margin-top: 70px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img2 img{
+       
+        
+        width: 150px;
+        height: 150px;
+    }
+    .page5{
+       
+        margin-top: 100px;
+        width: 100%;
+        height: 550px;
+        background-color: whitesmoke;
+    
+    }
+    .Bellashop2{
+      
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+     input{
+        
+        width: 350px;
+    }
+    .search2{
+         position: relative;
+    }
+    
+    .lupa2{
+        position: absolute;
+        bottom: 2px;
+       right: 5px;
+    }
+    
+    .rew{
+        width: 100%;
+        height: 250px;
+    }
+    .tel{
+        padding: 50px;
+    }
+    .sendmsj{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 40px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .sendmsj img{
+        width: 20px;
+        height: 20px;
+    }
+    .sendmsj p{
+        margin-top: 15px;
+    }
+    .page6{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+    .c img{
+        width: 150px;
+        height: 10px;
+    
+    
+    }
+    .wtsp img{
+        margin: 15px;
+    width: 15px;
+    height: 15px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (min-width:1024px) 
+{
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    .Menu{
+        display: none;
+    }
+ul{
+    display: flex;  
+    
+}
+ li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.headphone{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #007878;
+    width: 100%;
+    height: 40px;
+}
+.Bellashop{
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+.header i{
+    width: 240px;
+    margin-left: 20px;
+    display: flex;
+
+}
+.bagpng img{
+    width: 500px;
+    height: 450px;
+}
+.search{text-align: center;
+ width: 60%;
+    position: relative;
+}
+.search input{
+    width: 70%;
+    
+}
+.search img{
+position: absolute;
+margin-top: 2px;
+right: 120px;
+
+
+}
+.icon1{
+    
+    width: 40%;
+}
+.icon1 img{
+    margin-left: 20px;
+}
+.bags{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.praducts{
+    
+
+    width: 100%;
+    height: 500px;
+    background-color: #FFE2E0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    
+
+}
+.text{
+   
+    width: 30%;
+}
+.text h4{
+    margin-top: 80px;
+}
+.icons{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+}
+.icons img{
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+}
+.page2{
+        
+    background-color: whitesmoke;
+    width: 100%;
+    height: 250px;
+    
+}
+.page2 div{text-align: center;
+   
+    margin-top: 30px;
+    
+}
+.kecid {
+    border: 1px solid black;
+    border-radius: 50%;
+    top: 100px;
+    right: 0;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    
+}
+.kecid img{
+
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+.fatured{
+    margin: 50px 80px 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.bag1{
+    background-color: whitesmoke;
+   
+    height: 450px;
+   
+}
+.new{
+    text-align: center;
+    background-color: greenyellow;
+    width: 60px;
+    height: 25px;
+}
+.baslik{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.img1{
+    text-align: center;
+}
+.img1 img{
+    width: 200px;
+    height: 190px;
+}
+.ulduz{
+    margin-left: 20px;
+}
+.ulduz img{
+    
+    width: 10px;
+    height: 10px;
+
+}
+.page4{
+    padding: 0 90px;
+    background-color: #FFF7F7;
+    width: 100%;
+    height: 550px;
+}
+
+.text1 div{
+    display: flex;
+ }
+ 
+ .text1 button{
+ 
+     border-radius: 5px;
+     width: 100px;
+     height: 30px;
+ }
+.page3 {
+    
+    padding: 0 90px;
+}
+ 
+.bag2{
+    margin-top: 50px;
+    background-color: white;
+   
+    height: 450px;
+   
+}
+.img2{
+    margin-top: 70px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img2 img{
+   
+    
+    width: 150px;
+    height: 150px;
+}
+.img1 img{
+    margin-top: 30px;
+}
+.page5{
+   
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    background-color: whitesmoke;
+
+}
+.Bellashop2{
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+ input{
+    
+    width: 350px;
+}
+.search2{
+     position: relative;
+}
+
+.lupa2{
+    position: absolute;
+    bottom: 2px;
+   right: 5px;
+}
+
+.rew{
+    width: 100%;
+    height: 250px;
+}
+.tel{
+    padding: 50px;
+}
+.sendmsj{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sendmsj img{
+    width: 20px;
+    height: 20px;
+}
+.sendmsj p{
+    margin-top: 15px;
+}
+.page6{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.c img{
+    width: 150px;
+    height: 10px;
+
+
+}
+.wtsp img{
+    margin: 15px;
+width: 15px;
+height: 15px;
+}
+
+
+}
